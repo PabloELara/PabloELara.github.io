@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E3WS - AI Earthquake Early Warning Algorithm</title>
+  <meta name="description" content="E3WS is an AI-based earthquake early warning algorithm that estimates earthquake parameters from the first 3 seconds of seismic records." />
+  <meta name="color-scheme" content="light" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Backdrop del menú móvil -->
+  <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="nav-wrap">
+      <!-- Logo principal -->
+      <a class="brand" href="#inicio" aria-label="Go to home">
+        <img src="img/logo-claro.png" alt="E3WS - Logo" />
+      </a>
+
+      <!-- Menú principal escritorio -->
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#inicio" class="active">Home</a>
+        <a href="#nosotros">About E3WS</a>
+        <a href="#e3ws">E3WS</a>
+        <a href="#sistema">System</a>
+        <a href="#beneficios">Benefits</a>
+        <a href="#casos">Scientific Impact</a>
+        <a href="#novedades">Media</a>
+        <a href="#demo">Real Case</a>
+        <a href="#contacto">Contact</a>
+      </nav>
+
+      <div class="nav-social" aria-label="Professional links">
+        <a class="nav-chip" href="../index.html">Dr. Pablo Lara</a>
+        <a class="nav-chip" href="https://github.com/PabloELara/E3WS" target="_blank" rel="noopener">GitHub</a>
+        <a class="nav-chip" href="https://scholar.google.com/citations?user=sBzMGwkAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      </div>
+
+      <!-- Botón hamburguesa móvil -->
+      <button
+        class="burger"
+        id="burger"
+        aria-label="Open menu"
+        aria-controls="offcanvas"
+        aria-expanded="false"
+      >
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+
+    <!-- Menú lateral móvil -->
+    <aside
+      class="offcanvas"
+      id="offcanvas"
+      aria-label="Mobile menu"
+      aria-hidden="true"
+      role="dialog"
+    >
+      <div class="off-head">
+        <div class="off-title">Menu</div>
+        <button class="close-btn" id="closeMenu" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="off-body">
+        <nav class="off-links" aria-label="Sections (mobile)">
+          <a href="#inicio" class="active">Home</a>
+          <a href="#nosotros">About E3WS</a>
+          <a href="#e3ws">E3WS</a>
+          <a href="#sistema">System</a>
+          <a href="#beneficios">Benefits</a>
+          <a href="#casos">Scientific Impact</a>
+          <a href="#novedades">Media</a>
+          <a href="#demo">Real Case</a>
+          <a href="#contacto">Contact</a>
+        </nav>
+
+        <div class="off-social" aria-label="Professional links (mobile)">
+          <a class="nav-chip" href="../index.html">Dr. Pablo Lara</a>
+          <a class="nav-chip" href="https://github.com/PabloELara/E3WS" target="_blank" rel="noopener">GitHub</a>
+          <a class="nav-chip" href="https://scholar.google.com/citations?user=sBzMGwkAAAAJ" target="_blank" rel="noopener">Scholar</a>
+        </div>
+      </div>
+    </aside>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="inicio" class="hero" aria-label="E3WS cover">
+    <div class="hero-slider" aria-hidden="true">
+      <div class="slide active"><img src="img/teamwork.jpg" alt="E3WS team" /></div>
+      <div class="slide"><img src="img/alert-notification.jpg" alt="Alert notification" /></div>
+      <div class="slide"><img src="img/seismic-sensor-network.jpg" alt="Seismic sensor network" /></div>
+      <div class="slide"><img src="img/early-earthquake-warning-system.jpg" alt="Earthquake early warning system" /></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="plate">
+        <h1>E3WS</h1>
+        <p>An AI earthquake early warning algorithm that estimates earthquake parameters from the first 3 seconds of seismic records.</p>
+        <div class="hero-buttons">
+          <a href="#demo" class="btn btn-primary">View Real Case</a>
+          <a href="https://github.com/PabloELara/E3WS" class="btn btn-outline" target="_blank" rel="noopener">View Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NOSOTROS ================= -->
+  <section id="nosotros" aria-labelledby="h-nosotros">
+    <h2 id="h-nosotros">About E3WS</h2>
+    <p>E3WS was developed by Dr. Pablo Lara to connect machine learning, seismology, and operational earthquake early warning.</p>
+
+    <div class="grid about">
+      <article class="card">
+        <h3>3-Second Analysis</h3>
+        <p>E3WS estimates earthquake parameters from the first 3 seconds of a single-station seismic record.</p>
+      </article>
+
+      <article class="card">
+        <h3>Sensor Flexibility</h3>
+        <p>The algorithm is designed to work with both high-cost and low-cost sensors, expanding where early warning can be deployed.</p>
+      </article>
+
+      <article class="card">
+        <h3>Global Potential</h3>
+        <p>E3WS can be adapted for seismic regions around the world, especially where seconds of warning can reduce risk.</p>
+      </article>
+
+      <article class="card">
+        <h3>Research Lead</h3>
+        <p>Dr. Pablo Lara leads the research and development behind E3WS.</p>
+        <a class="btn-link" href="../index.html">View Portfolio</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= E3WS ================= -->
+  <section id="e3ws" class="section-alt" aria-labelledby="h-e3ws">
+    <h2 id="h-e3ws">What is E3WS?</h2>
+
+    <div class="e3ws-wrap">
+      <p class="e3ws-intro">
+        E3WS is the core AI algorithm behind rapid earthquake early warning from the earliest available seismic signal.
+      </p>
+
+      <p class="e3ws-text">
+        The method uses the first 3 seconds of seismic records to detect earthquakes, identify the P-wave phase,
+        and estimate source parameters such as magnitude and location.
+      </p>
+
+      <p class="e3ws-text">
+        Its purpose is speed with scientific reliability: converting the earliest ground-motion information into
+        warning decisions before damaging waves arrive.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SISTEMA ================= -->
+  <section id="sistema" aria-labelledby="h-sistema">
+    <h2 id="h-sistema">The System</h2>
+
+    <div class="sistema-wrap">
+      <p class="sistema-intro">
+        E3WS combines real-time seismic acquisition, machine learning, and rapid source characterization.
+      </p>
+
+      <div class="sistema-grid">
+        <article class="sistema-card">
+          <h3>Data Capture</h3>
+          <p>
+            High-cost and low-cost sensors continuously record seismic signals and provide the first seconds of motion.
+          </p>
+        </article>
+
+        <article class="sistema-card">
+          <h3>Machine Learning</h3>
+          <p>
+            E3WS processes the first 3 seconds of records to detect the event and estimate magnitude and location.
+          </p>
+        </article>
+
+        <article class="sistema-card">
+          <h3>Warning Decision</h3>
+          <p>
+            The output can support alert workflows, institutional protocols, and public-safety decisions.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BENEFICIOS ================= -->
+  <section id="beneficios" class="section-alt" aria-labelledby="h-beneficios">
+    <h2 id="h-beneficios">Benefits</h2>
+
+    <div class="grid benefits">
+      <article class="card benefit">
+        <div class="ico-wrap">
+          <svg class="ico-svg" viewBox="0 0 640 640" aria-hidden="true">
+            <path d="M119.9 75.5C108.6 68.6 93.8 72.3 86.9 83.6C62.1 124.6 47.9 172.7 47.9 224C47.9 275.3 62.1 323.4 86.9 364.4C93.8 375.7 108.5 379.4 119.9 372.5C131.3 365.6 134.9 350.9 128 339.5C107.7 305.9 96 266.3 96 224C96 181.7 107.7 142.1 128.1 108.4C135 97.1 131.3 82.3 120 75.4zM520 75.5C508.7 82.4 505 97.1 511.9 108.5C532.3 142.2 544 181.8 544 224.1C544 266.4 532.3 306 511.9 339.7C505 351 508.7 365.8 520 372.7C531.3 379.6 546.1 375.9 553 364.6C577.8 323.6 592 275.5 592 224.2C592 172.9 577.8 124.6 553 83.6C546.1 72.3 531.4 68.6 520 75.5zM352 279.4C371.1 268.3 384 247.7 384 224C384 188.7 355.3 160 320 160C284.7 160 256 188.7 256 224C256 247.7 268.9 268.4 288 279.4L288 544C288 561.7 302.3 576 320 576C337.7 576 352 561.7 352 544L352 279.4zM212.2 155C219.4 143.8 216.1 129 205 121.8C193.9 114.6 179 117.9 171.8 129C154.2 156.4 144 189 144 224C144 259 154.2 291.6 171.8 319C179 330.2 193.8 333.4 205 326.2C216.2 319 219.4 304.2 212.2 293C199.4 273.1 192 249.4 192 224C192 198.6 199.4 174.9 212.2 155zM468.2 129C461 117.8 446.2 114.6 435 121.8C423.8 129 420.6 143.8 427.8 155C440.6 174.9 448 198.6 448 224C448 249.4 440.6 273.1 427.8 293C420.6 304.2 423.9 319 435 326.2C446.1 333.4 461 330.1 468.2 319C485.8 291.6 496 259 496 224C496 189 485.8 156.4 468.2 129z"/>
+          </svg>
+        </div>
+        <h3>Extreme Speed</h3>
+        <p>Designed to support warning decisions from the first seconds of the seismic record.</p>
+      </article>
+
+      <article class="card benefit">
+        <div class="ico-wrap">
+          <svg class="ico-svg" viewBox="0 0 640 640" aria-hidden="true">
+            <path d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L329.2 576C316.7 561.3 306 545.2 297.4 528L207.9 528L207.9 448C207.9 430.3 222.2 416 239.9 416L271.9 416L271.9 389.3C271.9 371.2 278 354.1 288.5 340.5C288.1 339.1 287.9 337.6 287.9 336L287.9 304C287.9 295.2 295.1 288 303.9 288L335.9 288C344.7 288 351.9 295.2 351.9 304L351.9 305L438.6 276.1C441.7 275.1 444.8 274.3 447.9 273.6L448 128C448 92.7 419.3 64 384 64L128 64zM160 176C160 167.2 167.2 160 176 160L208 160C216.8 160 224 167.2 224 176L224 208C224 216.8 216.8 224 208 224L176 224C167.2 224 160 216.8 160 208L160 176zM304 160L336 160C344.8 160 352 167.2 352 176L352 208C352 216.8 344.8 224 336 224L304 224C295.2 224 288 216.8 288 208L288 176C288 167.2 295.2 160 304 160zM160 304C160 295.2 167.2 288 176 288L208 288C216.8 288 224 295.2 224 304L224 336C224 344.8 216.8 352 208 352L176 352C167.2 352 160 344.8 160 336L160 304zM477.3 552.5L464 558.8L464 370.7L560 402.7L560 422.3C560 478.1 527.8 528.8 477.3 552.6zM453.9 323.5L341.9 360.8C328.8 365.2 320 377.4 320 391.2L320 422.3C320 496.7 363 564.4 430.2 596L448.7 604.7C453.5 606.9 458.7 608.1 463.9 608.1C469.1 608.1 474.4 606.9 479.1 604.7L497.6 596C565 564.3 608 496.6 608 422.2L608 391.1C608 377.3 599.2 365.1 586.1 360.7L474.1 323.4C467.5 321.2 460.4 321.2 453.9 323.4z"/>
+          </svg>
+        </div>
+        <h3>Accessible Deployment</h3>
+        <p>Compatible with high-cost and low-cost sensors, making early warning more scalable.</p>
+      </article>
+
+      <article class="card benefit">
+        <div class="ico-wrap">
+          <svg class="ico-svg" viewBox="0 0 640 640" aria-hidden="true">
+            <path d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L329.2 576C316.7 561.3 306 545.2 297.4 528L207.9 528L207.9 448C207.9 430.3 222.2 416 239.9 416L271.9 416L271.9 389.3C271.9 371.2 278 354.1 288.5 340.5C288.1 339.1 287.9 337.6 287.9 336L287.9 304C287.9 295.2 295.1 288 303.9 288L335.9 288C344.7 288 351.9 295.2 351.9 304L351.9 305L438.6 276.1C441.7 275.1 444.8 274.3 447.9 273.6L448 128C448 92.7 419.3 64 384 64L128 64zM160 176C160 167.2 167.2 160 176 160L208 160C216.8 160 224 167.2 224 176L224 208C224 216.8 216.8 224 208 224L176 224C167.2 224 160 216.8 160 208L160 176zM304 160L336 160C344.8 160 352 167.2 352 176L352 208C352 216.8 344.8 224 336 224L304 224C295.2 224 288 216.8 288 208L288 176C288 167.2 295.2 160 304 160zM160 304C160 295.2 167.2 288 176 288L208 288C216.8 288 224 295.2 224 304L224 336C224 344.8 216.8 352 208 352L176 352C167.2 352 160 344.8 160 336L160 304zM477.3 552.5L464 558.8L464 370.7L560 402.7L560 422.3C560 478.1 527.8 528.8 477.3 552.6zM453.9 323.5L341.9 360.8C328.8 365.2 320 377.4 320 391.2L320 422.3C320 496.7 363 564.4 430.2 596L448.7 604.7C453.5 606.9 458.7 608.1 463.9 608.1C469.1 608.1 474.4 606.9 479.1 604.7L497.6 596C565 564.3 608 496.6 608 422.2L608 391.1C608 377.3 599.2 365.1 586.1 360.7L474.1 323.4C467.5 321.2 460.4 321.2 453.9 323.4z"/>
+          </svg>
+        </div>
+        <h3>Public Safety Impact</h3>
+        <p>Built for operational contexts where even a few seconds can help people and institutions respond.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CASOS ================= -->
+  <section id="casos" aria-labelledby="h-casos">
+    <h2 id="h-casos">Scientific Impact</h2>
+
+    <div class="carousel" aria-roledescription="carousel" aria-label="Scientific impact">
+      <div class="track" id="track">
+        <article class="item">
+          <div class="case-card">
+            <h3>Top 10% JGR Readership</h3>
+            <p>E3WS was among the top 10% most widely read papers in Journal of Geophysical Research: Solid Earth in 2023.</p>
+            <a class="btn-link" href="https://www.linkedin.com/posts/pablolarasismo_e3ws-top-10-jgr-solid-earth-agu-activity-7323197231157678080-Z8Qz?utm_source=share&utm_medium=member_desktop&amp;rcm=ACoAAAx6KrgBGhoxj1aG4aWIrGLXDEon3RnYInE" target="_blank" rel="noopener">View Recognition</a>
+          </div>
+        </article>
+        <article class="item">
+          <div class="case-card">
+            <h3>Real Reported Alert Case</h3>
+            <p>A real Ica, Peru case was reported by a Facebook user, showing the relevance of rapid warning decisions in public-facing contexts.</p>
+          </div>
+        </article>
+        <article class="item">
+          <div class="case-card">
+            <h3>International Recognition</h3>
+            <p>Recognized in France through the 2024 IRD Innovation Trophy for seismic innovation.</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="nav-btn prev" id="prev" aria-label="Previous">‹</button>
+      <button class="nav-btn next" id="next" aria-label="Next">›</button>
+    </div>
+  </section>
+
+  <!-- ================= NOVEDADES ================= -->
+  <section id="novedades" class="section-alt" aria-labelledby="h-novedades">
+    <h2 id="h-novedades">Media & Impact</h2>
+
+    <div class="grid news">
+      <article class="news-card">
+        <div class="news-image">Press</div>
+        <h3>El Comercio</h3>
+        <p>Coverage on how artificial intelligence can strengthen earthquake early warning in Peru.</p>
+        <a href="https://elcomercio.pe/tecnologia/inteligencia-artificial/como-la-inteligencia-artificial-puede-fortalecer-la-alerta-de-sismos-en-el-peru-ia-google-latinoamerica-noticia/" class="btn-news" target="_blank" rel="noopener">Read Coverage</a>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image">Press</div>
+        <h3>El Peruano</h3>
+        <p>National article about strengthening earthquake early warning through artificial intelligence.</p>
+        <a href="https://elperuano.pe/noticia/229140-alerta-temprana-de-sismos-se-fortalecera-gracias-a-la-inteligencia-artificial" class="btn-news" target="_blank" rel="noopener">Read Coverage</a>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image">TV</div>
+        <h3>Panamericana Television</h3>
+        <p>National coverage highlighting IGP research on artificial intelligence for strengthening earthquake early warning.</p>
+        <a href="https://panamericana.pe/tecnologia/397475-igp-fortalecen-alerta-temprana-sismos-inteligencia-artificial" class="btn-news" target="_blank" rel="noopener">Read Coverage</a>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image">Agency</div>
+        <h3>Agencia Andina</h3>
+        <p>Institutional news coverage of AI-based seismic alert research and public safety applications.</p>
+        <a href="https://andina.pe/agencia/noticia-alerta-temprana-sismos-se-fortalecera-gracias-a-inteligencia-artificial-964846.aspx" class="btn-news" target="_blank" rel="noopener">Read Coverage</a>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image">Radio</div>
+        <h3>Radio Nacional</h3>
+        <p>Public radio coverage on how early earthquake alerts can be reinforced by artificial intelligence.</p>
+        <a href="https://radionacional.gob.pe/noticias/tecnologia/las-alertas-tempranas-de-sismos-se-reforzaran-gracias-a-la-inteligencia-artificial" class="btn-news" target="_blank" rel="noopener">Read Coverage</a>
+      </article>
+
+      <article class="news-card">
+        <div class="news-image">Award</div>
+        <h3>Geoazur / IRD</h3>
+        <p>International recognition in France for E3WS and its innovation potential for seismic-risk countries.</p>
+        <a href="https://www.oca.eu/fr/acc-geoazur/5107-pablo-lara-trophee-de-linnovation-2024-de-lird" class="btn-news" target="_blank" rel="noopener">View Recognition</a>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ================= DEMO ================= -->
+  <!--
+    Sección de demostración del sistema E3WS.
+
+    Objetivo:
+    Presentar un caso de estudio basado en el sismo de magnitud 6.1
+    registrado cerca de Ica, Perú.
+
+    El video muestra la activación de una alerta temprana y sirve como
+    evidencia visual del concepto operativo del sistema.
+
+    Futuras mejoras:
+    - Dashboard sísmico en tiempo real
+    - Integración con Python / ObsPy
+    - Visualización de sensores
+    - Datos sísmicos oficiales automatizados
+  -->
+  <section id="demo" class="demo-section" aria-labelledby="h-demo">
+    <h2 id="h-demo">Real Case</h2>
+
+    <p class="demo-intro">
+      Real reported case showing an E3WS alert associated with an earthquake near Ica, Peru.
+    </p>
+    <div class="demo-wrap">
+      <div class="demo-video-card">
+        <div class="demo-device-frame">
+          <video class="demo-video" controls preload="metadata">
+            <source src="video/ica-earthquake-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="demo-info-card">
+        <span class="demo-label">Reported Case</span>
+
+        <h3>Ica Earthquake Report</h3>
+
+        <p>
+          This video documents the alert behavior of E3WS during a real case reported by a Facebook user.
+        </p>
+
+        <ul class="event-list">
+          <li><strong>Reported by:</strong> <a href="https://www.facebook.com/victor.h.pachas" target="_blank" rel="noopener">Victor Pachas</a></li>
+          <li><strong>Method:</strong> First 3 seconds of seismic records</li>
+          <li><strong>Outputs:</strong> Detection, magnitude, and location</li>
+          <li><strong>Use:</strong> Rapid warning-decision support</li>
+          <li><strong>Location:</strong> Near Ica, Peru</li>
+          <li><strong>Research:</strong> AI-based earthquake early warning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- ================= CONTACTO ================= -->
+  <section id="contacto" class="section-alt" aria-labelledby="h-contacto">
+    <h2 id="h-contacto">Contact</h2>
+    <p class="contact-intro">For research collaboration, technical questions, or demonstrations, contact Dr. Pablo Lara.</p>
+
+    <div class="contact">
+      <form id="contactForm" class="form" action="https://formspree.io/f/mojpdqgw" method="POST" novalidate>
+        <input type="text" name="company" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="row">
+          <div class="group">
+            <label for="nombre">Name *</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Your name" required minlength="2" />
+            <small class="error-msg">Please enter a valid name</small>
+          </div>
+          <div class="group">
+            <label for="correo">Email *</label>
+            <input id="correo" name="email" type="email" placeholder="yourmail@domain.com" required />
+            <small class="error-msg">Please enter a valid email</small>
+          </div>
+        </div>
+        <div class="row" style="margin-top:12px">
+          <div class="group" style="grid-column:1 / -1">
+            <label for="asunto">Subject (optional)</label>
+            <input id="asunto" name="asunto" type="text" placeholder="Reason for your message" />
+          </div>
+        </div>
+        <div class="row" style="margin-top:12px">
+          <div class="group" style="grid-column:1 / -1">
+            <label for="mensaje">Message *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Write your message..." required minlength="10"></textarea>
+            <small class="error-msg">The message must be at least 10 characters long</small>
+          </div>
+        </div>
+        <div style="margin-top:14px; display:flex; align-items:center; gap:12px">
+          <button type="submit" class="send">
+            <span class="btn-text">Send</span>
+            <span class="btn-loader"></span>
+          </button>
+          <span id="ok" class="ok"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>&copy; <span id="year"></span> Pablo Lara</p>
+    <div class="footer-links" aria-label="Footer links">
+      <a href="../index.html">Personal Website</a>
+      <a href="https://github.com/PabloELara/E3WS" target="_blank" rel="noopener">E3WS GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Archivo principal JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
